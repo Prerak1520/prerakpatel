@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prerak Patel — Projects</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+body{background:var(--paper);color:var(--ink);font-family:var(--ff-body);padding:6vw 4vw;min-height:100vh}
+.hd{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4rem;padding-bottom:1.5rem;border-bottom:1px solid var(--hairline)}
+.hd h1{font-family:var(--ff-sans);font-size:clamp(3rem,6vw,5rem);font-weight:300;letter-spacing:-0.04em;line-height:.9;font-stretch:condensed;text-transform:uppercase}
+.hd .sub{font-family:var(--ff-mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:28px;grid-auto-rows:minmax(180px,auto)}
+.card{background:transparent;border:1px solid var(--hairline);padding:28px;display:flex;flex-direction:column;justify-content:space-between;transition:background .3s,border-color .3s;position:relative;overflow:hidden}
+.card:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.card:hover .cat,.card:hover .meta{color:var(--paper);opacity:.7}
+.card .tag{position:absolute;top:18px;right:18px;font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;opacity:.5}
+.card .cat{font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:10px}
+.card h3{font-family:var(--ff-sans);font-size:1.75rem;font-weight:600;letter-spacing:-0.025em;line-height:1.05;text-transform:uppercase;margin-bottom:12px}
+.card p{font-size:.9rem;line-height:1.5;opacity:.8;margin-bottom:18px}
+.card .meta{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute);display:flex;justify-content:space-between}
+.c-wide{grid-column:span 8}
+.c-half{grid-column:span 6}
+.c-third{grid-column:span 4}
+.c-tall{grid-column:span 4;grid-row:span 2}
+.hero-card{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.hero-card .cat,.hero-card .meta{color:var(--paper);opacity:.7}
+.hero-card h3{font-size:2.75rem}
+.hero-card:hover{background:var(--paper);color:var(--ink);border-color:var(--ink)}
+.hero-card:hover .cat,.hero-card:hover .meta{color:var(--ink-mute);opacity:1}
+.stack{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.chip{font-family:var(--ff-mono);font-size:.65rem;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border:1px solid currentColor;opacity:.55}
+.foot{display:flex;justify-content:space-between;margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--hairline);font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-mute)}
+@media(max-width:900px){.c-wide,.c-half,.c-third,.c-tall{grid-column:span 12;grid-row:auto}}
+</style></head>
+<body data-screen-label="01 Projects grid">
+<header class="hd">
+  <h1>Selected<br>work.</h1>
+  <div class="sub">05 projects · 2023 — 2026</div>
+</header>
+
+<div class="grid">
+  <article class="card hero-card c-wide c-tall">
+    <div>
+      <span class="tag">01</span>
+      <div class="cat">Healthcare AI · RAG</div>
+      <h3>RAG Clinical<br>Intelligence System.</h3>
+      <p>End-to-end RAG pipeline for a telehealth / RTM platform. Hybrid BM25 + vector retrieval, cross-encoder reranking, CPT-code metadata boosting, and audit logging. Answers domain-specific clinical queries across three distinct reimbursement models.</p>
+      <div class="stack">
+        <span class="chip">Python</span><span class="chip">ChromaDB</span><span class="chip">LangChain</span><span class="chip">Mistral 7B</span><span class="chip">BM25</span>
+      </div>
+    </div>
+    <div class="meta"><span>Pillbox Health</span><span>2025 — Present</span></div>
+  </article>
+
+  <article class="card c-third">
+    <span class="tag">02</span>
+    <div class="cat">Healthcare IT</div>
+    <h3>Care Mgmt<br>Platform.</h3>
+    <p>EHR-adjacent care management platform. Requirements, UAT, provider workflow translation.</p>
+    <div class="meta"><span>Pillbox Health</span><span>2025 —</span></div>
+  </article>
+
+  <article class="card c-third">
+    <span class="tag">03</span>
+    <div class="cat">AI · n8n</div>
+    <h3>Outreach<br>Automation.</h3>
+    <p>n8n workflow replacing manual community communication and reporting.</p>
+    <div class="meta"><span>Community</span><span>2025</span></div>
+  </article>
+
+  <article class="card c-half">
+    <span class="tag">04</span>
+    <div class="cat">Claude API · React</div>
+    <h3>LinkedAI Posts.</h3>
+    <p>React application integrating the Anthropic Claude API for automated LinkedIn content generation. Prompts, drafting, tone control.</p>
+    <div class="stack"><span class="chip">React</span><span class="chip">Claude API</span></div>
+    <div class="meta"><span>Personal</span><span>2025</span></div>
+  </article>
+
+  <article class="card c-half">
+    <span class="tag">05</span>
+    <div class="cat">Migration · PM</div>
+    <h3>CRM Modernization.</h3>
+    <p>Led CRM migration for ABC Financial. Stakeholder alignment, data migration strategy, and user onboarding from legacy systems.</p>
+    <div class="stack"><span class="chip">Agile</span><span class="chip">Jira</span><span class="chip">Data Mapping</span></div>
+    <div class="meta"><span>ABC Financial</span><span>2024</span></div>
+  </article>
+</div>
+
+<footer class="foot">
+  <span>Prerak Patel ©2026</span>
+  <span>prerak09ap@gmail.com</span>
+  <span>Tampa, FL · Open to Remote</span>
+</footer>
+</body></html>

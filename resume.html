@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prerak Patel — Resume</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+@page{size:letter;margin:0}
+html,body{background:#c8c6c4}
+body{font-family:var(--ff-body);color:var(--ink);font-size:11pt;line-height:1.45;padding:24px 0}
+.page{width:8.5in;min-height:11in;margin:0 auto;background:var(--paper);padding:.6in .65in;box-shadow:0 4px 24px rgba(0,0,0,.12)}
+.hd{display:grid;grid-template-columns:1fr auto;gap:24px;padding-bottom:14pt;border-bottom:1px solid var(--ink);margin-bottom:20pt}
+.hd h1{font-family:var(--ff-sans);font-size:34pt;font-weight:300;font-stretch:condensed;letter-spacing:-.03em;line-height:.9;text-transform:uppercase}
+.hd h1 em{font-family:var(--ff-script);font-style:normal;font-size:44pt;font-weight:400;text-transform:none;letter-spacing:0;line-height:.5;vertical-align:-4pt}
+.hd .tag{font-family:var(--ff-mono);font-size:8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute);margin-top:8pt}
+.hd .contact{text-align:right;font-family:var(--ff-mono);font-size:8pt;letter-spacing:.04em;line-height:1.75;color:var(--ink-soft);text-transform:uppercase}
+.hd .contact a{color:inherit}
+section{margin-bottom:14pt;break-inside:avoid}
+h2{font-family:var(--ff-mono);font-size:8pt;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--ink);padding-bottom:4pt;border-bottom:1px solid var(--hairline);margin-bottom:9pt;display:flex;justify-content:space-between}
+h2 .num{color:var(--ink-mute);font-weight:400}
+.summary p{font-size:10.5pt;line-height:1.55;max-width:75ch}
+.job{margin-bottom:10pt}
+.job .row{display:flex;justify-content:space-between;align-items:baseline;gap:12pt}
+.job .title{font-family:var(--ff-sans);font-weight:600;font-size:12pt;letter-spacing:-.01em}
+.job .co{color:var(--ink-soft);font-weight:500}
+.job .meta{font-family:var(--ff-mono);font-size:8pt;letter-spacing:.06em;color:var(--ink-mute);text-transform:uppercase;white-space:nowrap}
+.job ul{margin-top:4pt;padding-left:14pt}
+.job ul li{font-size:10pt;color:var(--ink-soft);margin-bottom:2pt}
+.proj{margin-bottom:8pt;display:grid;grid-template-columns:1fr 2.2fr;gap:16pt}
+.proj .name{font-family:var(--ff-sans);font-weight:600;font-size:11pt;letter-spacing:-.01em}
+.proj .stack{font-family:var(--ff-mono);font-size:7.5pt;letter-spacing:.05em;color:var(--ink-mute);text-transform:uppercase;margin-top:2pt}
+.proj p{font-size:10pt;color:var(--ink-soft);line-height:1.5}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:5pt 20pt}
+.skill{font-size:10pt;line-height:1.55;color:var(--ink-soft)}
+.skill strong{color:var(--ink);font-family:var(--ff-mono);font-size:8pt;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:1pt}
+.edu{display:grid;grid-template-columns:1fr auto;gap:8pt 24pt;row-gap:4pt}
+.edu .d{font-family:var(--ff-sans);font-weight:600;font-size:11pt}
+.edu .s{color:var(--ink-soft);display:block;font-size:10pt}
+.edu .y{font-family:var(--ff-mono);font-size:8pt;letter-spacing:.06em;color:var(--ink-mute);text-transform:uppercase;align-self:start;margin-top:2pt}
+.certs{display:flex;flex-wrap:wrap;gap:6pt 10pt;font-family:var(--ff-mono);font-size:8.5pt;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft)}
+.certs span{border:1px solid var(--hairline);padding:4pt 8pt}
+.print-btn{position:fixed;bottom:20px;right:20px;padding:10px 18px;background:var(--ink);color:var(--paper);border:0;font-family:var(--ff-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;z-index:100}
+@media print{.print-btn{display:none}body{padding:0;background:#fff}.page{box-shadow:none;margin:0}}
+</style></head>
+<body>
+<nav style="font-family:var(--ff-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute);display:flex;justify-content:space-between;padding:1.25rem 2rem;border-bottom:1px solid var(--border);margin-bottom:0;position:sticky;top:0;background:#c8c6c4;z-index:100">
+  <a href="../index.html?back=1" style="color:inherit">← Prerak Patel</a>
+  <span>Résumé</span>
+</nav>
+<button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+<div class="page">
+  <header class="hd">
+    <div>
+      <h1>Prerak <em>Patel</em></h1>
+      <div class="tag">Technical PM · AI Products · Healthcare IT</div>
+    </div>
+    <div class="contact">
+      Tampa, FL · Open to Remote<br>
+      prerak09ap@gmail.com<br>
+      +1 (314) 203-4849<br>
+      linkedin.com/in/prerak-patel-<br>
+      github.com/Prerak1520
+    </div>
+  </header>
+
+  <section class="summary">
+    <h2><span>Summary</span><span class="num">00</span></h2>
+    <p>Mechatronics engineer turned healthcare AI builder and PM. Currently coordinating Pillbox Health — a HIPAA-adjacent care management platform — while shipping production RAG pipelines (Python, ChromaDB, Mistral 7B) and React apps with the Claude API. MS in Project Management from Saint Louis University. Targeting Technical PM and AI PM roles where product ownership meets engineering depth.</p>
+  </section>
+
+  <section>
+    <h2><span>Experience</span><span class="num">01</span></h2>
+
+    <div class="job">
+      <div class="row"><span class="title">Business Analyst / Platform Coordinator — <span class="co">Pillbox Health</span></span><span class="meta">May 25 — Pres · Tampa, FL</span></div>
+      <ul>
+        <li>Own requirements, UAT, and stakeholder communication for a patient-centric care management platform (EHR-adjacent).</li>
+        <li>Translate clinical workflows from providers into platform features; coordinate cross-functional teams through the full dev cycle.</li>
+        <li>Maintain compliance-ready documentation; analyze feedback to drive adoption improvements.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="row"><span class="title">Project Manager — <span class="co">Ola Digital Health</span></span><span class="meta">Jul 25 — Aug 25</span></div>
+      <ul><li>Coordinated providers and product teams on a telehealth platform; gathered functional requirements and aligned features with clinical workflows.</li></ul>
+    </div>
+
+    <div class="job">
+      <div class="row"><span class="title">Data Visualization Associate — <span class="co">Excelerate</span></span><span class="meta">Sep 24 — Oct 24</span></div>
+      <ul><li>Built interactive KPI dashboard in Google Data Studio; reduced data interpretation time by 25%.</li></ul>
+    </div>
+
+    <div class="job">
+      <div class="row"><span class="title">Project Management Associate — <span class="co">Excelerate</span></span><span class="meta">Dec 23 — Jan 24</span></div>
+      <ul><li>Planned and executed a global hackathon across 5 cross-functional teams using Scrum; improved on-time task completion by 30%.</li></ul>
+    </div>
+
+    <div class="job">
+      <div class="row"><span class="title">Project Support / Operations — <span class="co">Heattrans Pvt. Ltd.</span></span><span class="meta">Feb 22 — Apr 23</span></div>
+      <ul><li>Tracked job orders, machining schedules, and production risks in a metal forging environment.</li></ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>Selected Projects</span><span class="num">02</span></h2>
+
+    <div class="proj">
+      <div><div class="name">RAG Clinical Intelligence</div><div class="stack">Python · ChromaDB · BM25 · LangChain · Mistral 7B</div></div>
+      <p>Production RAG pipeline for a telehealth / RTM platform. Hybrid BM25 + vector retrieval, cross-encoder reranking, CPT-code metadata boosting. Handles queries across 3 reimbursement models with audit logging and document scrubbing.</p>
+    </div>
+    <div class="proj">
+      <div><div class="name">LinkedAI Posts</div><div class="stack">React · Claude API</div></div>
+      <p>React application integrating the Anthropic Claude API for automated LinkedIn content generation.</p>
+    </div>
+    <div class="proj">
+      <div><div class="name">Outreach Automation</div><div class="stack">n8n</div></div>
+      <p>Automated workflow replacing manual community communication and reporting.</p>
+    </div>
+    <div class="proj">
+      <div><div class="name">CRM Modernization — ABC Financial</div><div class="stack">Jira · Agile · Data Mapping</div></div>
+      <p>Led CRM migration: stakeholder alignment, data migration strategy, user onboarding from legacy systems.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>Skills</span><span class="num">03</span></h2>
+    <div class="skills">
+      <div class="skill"><strong>PM</strong>Jira · Trello · MS Project · Agile · Scrum · UAT · Risk mgmt</div>
+      <div class="skill"><strong>AI / ML</strong>RAG pipelines · Claude API · n8n · LangChain · ChromaDB</div>
+      <div class="skill"><strong>Engineering</strong>Python · React · JavaScript · REST · Ollama</div>
+      <div class="skill"><strong>Data</strong>SQL · Google Data Studio · Power BI · Excel</div>
+      <div class="skill"><strong>Domain</strong>HIPAA-adjacent design · EHR workflows · Clinical UAT</div>
+      <div class="skill"><strong>Soft</strong>Stakeholder mgmt · Cross-functional coordination · Technical writing</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>Education</span><span class="num">04</span></h2>
+    <div class="edu">
+      <div><span class="d">MS, Project Management</span><span class="s">Saint Louis University, St. Louis, MO</span></div>
+      <div class="y">Aug 23 — May 25</div>
+      <div><span class="d">B.Tech, Mechatronics, Robotics &amp; Automation</span><span class="s">Ganpat University, India</span></div>
+      <div class="y">May 19 — Mar 23</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>Certifications</span><span class="num">05</span></h2>
+    <div class="certs">
+      <span>Google PM Certificate</span>
+      <span>Cognitive PM in AI (CPMAI)</span>
+      <span>Accenture PM Job Simulation</span>
+      <span>Foundations of Project Management</span>
+    </div>
+  </section>
+</div>
+</body></html>
